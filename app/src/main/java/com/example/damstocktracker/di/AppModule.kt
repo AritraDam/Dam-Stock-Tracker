@@ -28,6 +28,7 @@ object AppModule {
 
     @Provides
     @Singleton
+    //application context is provided here by dragger hilt
     fun provideStockDatabase(app: Application): StockDatabase {
         return Room.databaseBuilder(
             app,
