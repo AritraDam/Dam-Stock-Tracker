@@ -6,10 +6,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.material.Divider
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -67,9 +66,11 @@ fun CompanyListingScreen(
                             .padding(16.dp)
                     )
                     if(i < state.companies.size) {
-                        Divider(modifier = Modifier.padding(
-                            horizontal = 16.dp
-                        ))
+                        HorizontalDivider(
+                            modifier = Modifier.padding(
+                                horizontal = 16.dp
+                            )
+                        )
                     }
                 }
             }

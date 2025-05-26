@@ -70,7 +70,9 @@ dependencies {
 
     // Compose dependencies
     implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.0")
-    implementation("androidx.compose.material:material:1.8.1")
+    implementation("androidx.compose.material3:material3:1.3.2")
+    implementation("androidx.compose.material3:material3-window-size-class:1.3.2")
+    implementation("androidx.compose.material3:material3-adaptive-navigation-suite:1.4.0-alpha15")
     implementation (libs.androidx.activity.compose.v160alpha01)
     implementation ("com.google.accompanist:accompanist-swiperefresh:0.24.2-alpha")
 

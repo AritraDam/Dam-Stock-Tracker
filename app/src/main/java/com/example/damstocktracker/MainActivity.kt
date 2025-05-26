@@ -30,7 +30,12 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    DestinationsNavHost(navGraph = NavGraphs.root)
+                    Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                        DestinationsNavHost(
+                            navGraph = NavGraphs.root,
+                            modifier = Modifier.padding(innerPadding)
+                        )
+                    }
                 }
             }
         }
